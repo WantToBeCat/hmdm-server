@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
+
+    <!-- Disable JAR scanning to avoid BCEL errors with Java 9+ module-info.class -->
+    <JarScanner scanAllDirectories="false" scanClassPath="false"/>
     <!-- database settings -->
     <Parameter name="JDBC.driver"   value="${jdbc.driver}"/>
     <Parameter name="JDBC.url"      value="${jdbc.url}"/>
